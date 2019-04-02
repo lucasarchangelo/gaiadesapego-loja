@@ -8,7 +8,6 @@ import { IndexModule } from './index/index.module';
 import { RouterModule } from '@angular/router';
 import { AppRoutes } from './app.routing';
 import { ProductModule } from './layout/product/product.module';
-
 @NgModule({
   declarations: [
     AppComponent,

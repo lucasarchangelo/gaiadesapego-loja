@@ -1,3 +1,9 @@
 .topo-nav {
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
+
+.badge-config  {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}

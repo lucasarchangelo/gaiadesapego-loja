@@ -1,5 +1,6 @@
 import { Routes } from "@angular/router";
 import { IndexComponent } from 'src/app/index/index.component';
+import { ProductComponent } from './product.component';
 
 export const ProductRoutes: Routes = [
   {
@@ -7,12 +8,8 @@ export const ProductRoutes: Routes = [
     children: [
         {
             path: "",
-            component: IndexComponent,
+            component: ProductComponent,
         },
-        // {
-        //     path: 'all-products',
-        //     component: ProductListComponent
-        // },
         // {
         //     path: 'favourite-products',
         //     component: FavouriteProductsComponent
