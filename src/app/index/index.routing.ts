@@ -1,8 +1,9 @@
 import { LoginComponent } from "./login/login.component";
-import { Routes } from "@angular/router";
+import { Routes, RouterModule } from "@angular/router";
 import { IndexComponent } from "./index.component";
+import { NgModule } from '@angular/core';
 
-export const IndexRoutes: Routes = [
+export const indexRoutes: Routes = [
   {
     path: "",
     children: [
@@ -17,3 +18,9 @@ export const IndexRoutes: Routes = [
     ]
   }
 ];
+
+@NgModule({
+	imports: [ RouterModule.forChild(indexRoutes) ],
+	exports: [ RouterModule ]
+})
+export class IndexRoutingModule {}

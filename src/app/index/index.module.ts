@@ -6,7 +6,7 @@ import { IndexComponent } from './index.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
-import { IndexRoutes } from './index.routing';
+import { IndexRoutingModule } from './index.routing';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -19,7 +19,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
-    RouterModule.forChild(IndexRoutes),
+    IndexRoutingModule,
   ],
   exports: [ NavbarComponent, FooterComponent, IndexComponent ],
   providers: [],

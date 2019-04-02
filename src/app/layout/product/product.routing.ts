@@ -1,14 +1,24 @@
-import { Routes } from "@angular/router";
+import { Routes, RouterModule } from "@angular/router";
 import { IndexComponent } from 'src/app/index/index.component';
 import { ProductComponent } from './product.component';
+import { NgModule } from '@angular/core';
+import { ListProductsComponent } from './list-products/list-products.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
-export const ProductRoutes: Routes = [
+export const productRoutes: Routes = [
   {
     path: 'products',
+    component: ProductComponent,
     children: [
         {
             path: "",
-            component: ProductComponent,
+            component: ListProductsComponent,
+            outlet: 'productSection'            
+        },
+        {
+          path: "oi",
+          component: ProductDetailComponent,
+          outlet: 'productSection'            
         },
         // {
         //     path: 'favourite-products',
@@ -27,5 +37,11 @@ export const ProductRoutes: Routes = [
         //     component: ProductDetailComponent
         // }
     ]
-  }
+  },
 ];
+
+@NgModule({
+	imports: [ RouterModule.forChild(productRoutes) ],
+	exports: [ RouterModule ]
+})
+export class ProductRoutingModule {}

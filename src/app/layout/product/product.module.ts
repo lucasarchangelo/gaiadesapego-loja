@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { RouterModule } from '@angular/router';
-import { ProductRoutes } from './product.routing';
+import { ProductRoutingModule } from './product.routing';
 import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product.component';
 import { ListProductsComponent } from './list-products/list-products.component';
@@ -19,7 +19,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
-    RouterModule.forChild(ProductRoutes),
+    ProductRoutingModule,
   ],
   exports: [ProductComponent],
   providers: [],

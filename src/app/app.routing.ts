@@ -9,7 +9,7 @@ export const AppRoutes: Routes = [
 				loadChildren: './index/index.module#IndexModule'
 			},
 			{
-				path: 'product',
+				path: 'products',
 				loadChildren: './layout/product/product.module#ProductModule',
 			},
 		]
