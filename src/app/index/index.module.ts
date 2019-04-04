@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { IndexRoutingModule } from './index.routing';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { IndexRoutingModule } from './index.routing';
     LoginComponent,
   ],
   imports: [
-    BrowserAnimationsModule,
+    CommonModule,
     IndexRoutingModule,
   ],
   exports: [ NavbarComponent, FooterComponent, IndexComponent ],

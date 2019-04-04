@@ -1,13 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
 
-import { RouterModule } from '@angular/router';
 import { ProductRoutingModule } from './product.routing';
 import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product.component';
 import { ListProductsComponent } from './list-products/list-products.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+
 
 @NgModule({
   declarations: [
@@ -17,8 +16,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     ProductDetailComponent,
   ],
   imports: [
-    BrowserAnimationsModule,
-    BrowserModule,
+    CommonModule,
     ProductRoutingModule,
   ],
   exports: [ProductComponent],

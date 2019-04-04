@@ -8,6 +8,7 @@ import { IndexModule } from './index/index.module';
 import { RouterModule } from '@angular/router';
 import { AppRoutes } from './app.routing';
 import { ProductModule } from './layout/product/product.module';
+import { AdminModule } from './layout/admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ProductModule } from './layout/product/product.module';
     BrowserModule,
     IndexModule,
     ProductModule,
+    AdminModule,
     NgbModule,
     RouterModule.forRoot(AppRoutes),
   ],
