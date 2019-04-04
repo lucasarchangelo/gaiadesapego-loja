@@ -7,18 +7,17 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { IndexRoutingModule } from './index.routing';
-import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
     IndexComponent,
     FooterComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserAnimationsModule,
-    BrowserModule,
     IndexRoutingModule,
   ],
   exports: [ NavbarComponent, FooterComponent, IndexComponent ],
